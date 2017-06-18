@@ -81,10 +81,61 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="src\actions\fuelSavingsActions.js" />
+    <Content Include="src\actions\fuelSavingsActions.spec.js" />
+    <Content Include="src\components\AboutPage.js" />
+    <Content Include="src\components\AboutPage.spec.js" />
+    <Content Include="src\components\App.js" />
+    <Content Include="src\components\FuelSavingsForm.js" />
+    <Content Include="src\components\FuelSavingsForm.spec.js" />
+    <Content Include="src\components\FuelSavingsResults.js" />
+    <Content Include="src\components\FuelSavingsResults.spec.js" />
+    <Content Include="src\components\FuelSavingsTextInput.js" />
+    <Content Include="src\components\FuelSavingsTextInput.spec.js" />
+    <Content Include="src\components\HomePage.js" />
+    <Content Include="src\components\NotFoundPage.js" />
+    <Content Include="src\components\Root.js" />
+    <Content Include="src\constants\actionTypes.js" />
+    <Content Include="src\containers\FuelSavingsPage.js" />
+    <Content Include="src\containers\FuelSavingsPage.spec.js" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\index.js" />
+    <Content Include="src\reducers\fuelSavingsReducer.js" />
+    <Content Include="src\reducers\fuelSavingsReducer.spec.js" />
+    <Content Include="src\reducers\index.js" />
+    <Content Include="src\reducers\initialState.js" />
+    <Content Include="src\routes.js" />
+    <Content Include="src\store\configureStore.js" />
+    <Content Include="src\store\store.spec.js" />
+    <Content Include="src\styles\about-page.css" />
+    <Content Include="src\utils\dateHelper.js" />
+    <Content Include="src\utils\dateHelper.spec.js" />
+    <Content Include="src\utils\fuelSavingsCalculator.js" />
+    <Content Include="src\utils\fuelSavingsCalculator.spec.js" />
+    <Content Include="src\utils\mathHelper.js" />
+    <Content Include="src\utils\mathHelper.spec.js" />
+    <Content Include="src\utils\numberFormatter.js" />
+    <Content Include="src\utils\numberFormatter.spec.js" />
+    <Content Include="src\webpack-public-path.js" />
+    <Content Include="tools\analyzeBundle.js" />
+    <Content Include="tools\build.js" />
+    <Content Include="tools\chalkConfig.js" />
+    <Content Include="tools\distServer.js" />
+    <Content Include="tools\fileMock.js" />
+    <Content Include="tools\nodeVersionCheck.js" />
+    <Content Include="tools\removeDemo.js" />
+    <Content Include="tools\setup\setup.js" />
+    <Content Include="tools\setup\setupMessage.js" />
+    <Content Include="tools\setup\setupPrompts.js" />
+    <Content Include="tools\srcServer.js" />
+    <Content Include="tools\startMessage.js" />
+    <Content Include="tools\testCi.js" />
     <Content Include="Web.config" />
+    <Content Include="webpack.config.dev.js" />
+    <Content Include="webpack.config.prod.js" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Api\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -92,18 +143,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include=".istanbul.yml" />
+    <Content Include=".npmrc" />
+    <Content Include=".travis.yml" />
+    <Content Include="appveyor.yml" />
+    <Content Include="package.json" />
+    <Content Include="tools\.yarnclean" />
+    <Content Include="src\index.ejs" />
+    <Content Include="src\store\__snapshots__\store.spec.js.snap" />
+    <Content Include="src\styles\styles.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="yarn.lock" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
