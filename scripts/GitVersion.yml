@@ -1,0 +1,18 @@
+next-version: 1
+assembly-versioning-scheme: MajorMinor
+mode: ContinuousDeployment
+branches:
+  master:
+    regex: master
+    increment: minor
+  hotfix:
+    regex: hotfix(es)?[/-]
+    mode: ContinuousDeployment
+    tag: hotfix
+    increment: patch
+  features:
+    regex: features?[/-]
+    mode: ContinuousDeployment
+    tag: useBranchName
+ignore:
+  sha: []
