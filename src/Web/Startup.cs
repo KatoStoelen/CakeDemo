@@ -28,7 +28,7 @@ namespace Web
                     {
                         ServeUnknownFileTypes = true
                     },
-                    FileSystem = new PhysicalFileSystem(Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "src"))
+                    FileSystem = new PhysicalFileSystem(Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "dist"))
                 })
                 .UseStageMarker(PipelineStage.MapHandler);
         }
