@@ -294,3 +294,6 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+scripts/tools/**/*
+!scripts/tools/packages.config
