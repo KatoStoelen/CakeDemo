@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AnnuityClaimReserves.Web</id>
+    <version>1.0.0.0</version>
+    <title>AnnuityClaimReserves.Web</title>
+    <authors>If - Waypoint</authors>
+    <owners>If</owners>
+    <description>AnnuityClaimReserves.Web</description>
+    <projectUrl>http://tfs2010at.ifint.biz/tfs/TFS2008Collection/WayPoint%20GIT/_git/AnnuityClaimReserves</projectUrl>
+  </metadata>
+  <files>
+    <file src="web.config" target="" />
+    <file src="bin\**\*.*" target="bin" />
+    <file src="dist\**\*.*" target="dist" />
+    <file src="scripts\install.ps1" target="scripts\install.ps1" />
+    <file src="scripts\PostDeploy.ps1" target="" />
+    <file src="..\scripts\PsakeScripts\**\*.*" target="scripts\PsakeScripts" />
+  </files>
+</package>
