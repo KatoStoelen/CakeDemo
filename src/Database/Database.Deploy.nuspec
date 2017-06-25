@@ -1,17 +1,15 @@
 ﻿<?xml version="1.0"?>
 <package>
   <metadata>
-    <id>CakeDemo.Web</id>
+    <id>CakeDemo.Database</id>
     <version>1.0.0.0</version>
-    <title>CakeDemo.Web</title>
+    <title>CakeDemo.Database</title>
     <authors>Kato</authors>
     <owners>Kato</owners>
-    <description>CakeDemo.Web</description>
+    <description>CakeDemo.Database</description>
   </metadata>
   <files>
-    <file src="web.config" target="" />
-    <file src="bin\**\*.*" target="bin" />
-    <file src="dist\**\*.*" target="dist" />
+    <file src="CreateDatabase.sql" target="" />
     <file src="scripts\**\*.*" target="scripts" />
   </files>
 </package>

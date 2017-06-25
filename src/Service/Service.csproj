@@ -7,7 +7,7 @@
     <ProjectGuid>{8A03DB93-91AE-48F1-BED4-37F4BB645EBE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CakeDemoService.Service</RootNamespace>
-    <AssemblyName>MyService</AssemblyName>
+    <AssemblyName>CakeDemoSvc</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,68 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="scripts\deploy.cake" />
+    <None Include="scripts\deploy.ps1" />
+    <None Include="scripts\tools\Addins\Cake.Core\Cake.Core.nupkg" />
+    <None Include="scripts\tools\Addins\Cake.Core\LICENSE" />
+    <None Include="scripts\tools\Addins\Cake.Powershell\Cake.Powershell.nupkg" />
+    <None Include="scripts\tools\Addins\Cake.Powershell\LICENSE" />
+    <None Include="scripts\tools\Addins\Cake.Services\Cake.Services.nupkg" />
+    <None Include="scripts\tools\Addins\Cake.Services\LICENSE" />
+    <None Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\Microsoft.PowerShell.5.ReferenceAssemblies.nupkg" />
+    <None Include="scripts\tools\Cake\Cake.nupkg" />
+    <None Include="scripts\tools\packages.config" />
+    <None Include="scripts\tools\packages.config.md5sum" />
+    <None Include="Service.Deploy.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\tools\Addins\Cake.Core\lib\net45\Cake.Core.dll" />
+    <Content Include="scripts\tools\Addins\Cake.Core\lib\net45\Cake.Core.pdb" />
+    <Content Include="scripts\tools\Addins\Cake.Core\lib\net45\Cake.Core.xml" />
+    <Content Include="scripts\tools\Addins\Cake.Powershell\lib\net45\Cake.Powershell.dll" />
+    <Content Include="scripts\tools\Addins\Cake.Powershell\lib\net45\Cake.Powershell.xml" />
+    <Content Include="scripts\tools\Addins\Cake.Powershell\lib\net45\System.Management.Automation.dll" />
+    <Content Include="scripts\tools\Addins\Cake.Services\lib\net45\Cake.Powershell.dll" />
+    <Content Include="scripts\tools\Addins\Cake.Services\lib\net45\Cake.Services.dll" />
+    <Content Include="scripts\tools\Addins\Cake.Services\lib\net45\Cake.Services.xml" />
+    <Content Include="scripts\tools\Addins\Cake.Services\lib\net45\System.Management.Automation.dll" />
+    <Content Include="scripts\tools\Addins\Cake.Services\lib\net45\System.ServiceProcess.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.Management.Infrastructure.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Activities.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Commands.Diagnostics.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.ConsoleHost.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Core.Activities.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Diagnostics.Activities.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Editor.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.GPowerShell.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.GraphicalHost.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.ISECommon.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Management.Activities.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.PackageManagement.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.PSReadLine.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Security.Activities.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Security.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.PowerShell.Utility.Activities.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\Microsoft.Powershell.Workflow.ServiceCore.dll" />
+    <Content Include="scripts\tools\Addins\Microsoft.PowerShell.5.ReferenceAssemblies\lib\net4\System.Management.Automation.dll" />
+    <Content Include="scripts\tools\Cake\Autofac.dll" />
+    <Content Include="scripts\tools\Cake\Cake.Common.dll" />
+    <Content Include="scripts\tools\Cake\Cake.Common.xml" />
+    <Content Include="scripts\tools\Cake\Cake.Core.dll" />
+    <Content Include="scripts\tools\Cake\Cake.Core.xml" />
+    <Content Include="scripts\tools\Cake\Cake.exe" />
+    <Content Include="scripts\tools\Cake\Cake.NuGet.dll" />
+    <Content Include="scripts\tools\Cake\Cake.NuGet.xml" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.CSharp.Desktop.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.Desktop.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.Scripting.CSharp.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="scripts\tools\Cake\Mono.CSharp.dll" />
+    <Content Include="scripts\tools\Cake\NuGet.Core.dll" />
+    <Content Include="scripts\tools\Cake\System.Collections.Immutable.dll" />
+    <Content Include="scripts\tools\Cake\System.Reflection.Metadata.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

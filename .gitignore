@@ -280,8 +280,8 @@ __pycache__/
 *.pyc
 
 # Cake - Uncomment if you are using it
-# tools/**
-# !tools/packages.config
+**/scripts/tools/**
+!**/scripts/tools/packages.config
 
 # Tabs Studio
 *.tss
@@ -294,6 +294,3 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
-
-scripts/tools/**/*
-!scripts/tools/packages.config

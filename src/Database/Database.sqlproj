@@ -57,5 +57,14 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scripts\deploy.cake" />
+    <None Include="scripts\deploy.ps1" />
+    <None Include="Database.Deploy.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="CreateDatabase.sql" />
   </ItemGroup>
 </Project>

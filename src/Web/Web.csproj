@@ -136,10 +136,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="scripts\tools\Addins\Cake.Core\lib\net45\Cake.Core.dll" />
+    <Content Include="scripts\tools\Addins\Cake.Core\lib\net45\Cake.Core.pdb" />
+    <Content Include="scripts\tools\Addins\Cake.Core\lib\net45\Cake.Core.xml" />
+    <Content Include="scripts\tools\Addins\Cake.IIS\lib\net45\Cake.IIS.dll" />
+    <Content Include="scripts\tools\Addins\Cake.IIS\lib\net45\Cake.IIS.xml" />
+    <Content Include="scripts\tools\Addins\Cake.IIS\lib\net45\Microsoft.Web.Administration.dll" />
+    <Content Include="scripts\tools\Cake\Autofac.dll" />
+    <Content Include="scripts\tools\Cake\Cake.Common.dll" />
+    <Content Include="scripts\tools\Cake\Cake.Common.xml" />
+    <Content Include="scripts\tools\Cake\Cake.Core.dll" />
+    <Content Include="scripts\tools\Cake\Cake.Core.xml" />
+    <Content Include="scripts\tools\Cake\Cake.exe" />
+    <Content Include="scripts\tools\Cake\Cake.NuGet.dll" />
+    <Content Include="scripts\tools\Cake\Cake.NuGet.xml" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.CSharp.Desktop.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.Desktop.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.Scripting.CSharp.dll" />
+    <Content Include="scripts\tools\Cake\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="scripts\tools\Cake\Mono.CSharp.dll" />
+    <Content Include="scripts\tools\Cake\NuGet.Core.dll" />
+    <Content Include="scripts\tools\Cake\System.Collections.Immutable.dll" />
+    <Content Include="scripts\tools\Cake\System.Reflection.Metadata.dll" />
     <Content Include="src\actions\fuelSavingsActions.js" />
     <Content Include="src\actions\fuelSavingsActions.spec.js" />
     <Content Include="src\components\AboutPage.js" />
-    <Content Include="src\components\AboutPage.spec.js" />
     <Content Include="src\components\App.js" />
     <Content Include="src\components\FuelSavingsForm.js" />
     <Content Include="src\components\FuelSavingsForm.spec.js" />
@@ -200,11 +223,17 @@
     <Content Include="src\store\__snapshots__\store.spec.js.snap" />
     <Content Include="src\styles\styles.scss" />
     <Content Include="tools\.yarnclean" />
-    <Content Include=".istanbul.yml" />
     <Content Include=".npmrc" />
-    <Content Include=".travis.yml" />
-    <Content Include="appveyor.yml" />
     <Content Include="package.json" />
+    <Content Include="scripts\deploy.cake" />
+    <Content Include="scripts\deploy.ps1" />
+    <Content Include="scripts\tools\Addins\Cake.Core\Cake.Core.nupkg" />
+    <Content Include="scripts\tools\Addins\Cake.Core\LICENSE" />
+    <Content Include="scripts\tools\Addins\Cake.IIS\Cake.IIS.nupkg" />
+    <Content Include="scripts\tools\Addins\Cake.IIS\LICENSE" />
+    <Content Include="scripts\tools\Cake\Cake.nupkg" />
+    <Content Include="scripts\tools\packages.config" />
+    <Content Include="scripts\tools\packages.config.md5sum" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
