@@ -9,7 +9,6 @@ Task("Install")
     {
         ServiceName = "CakeDemoSvc",
         DisplayName = "CakeDemoSvc",
-        Description = "CakeDemo Service",
         StartMode = "auto",
         ExecutablePath = MakeAbsolute(Directory("../") + File("CakeDemoSvc.exe"))
     });

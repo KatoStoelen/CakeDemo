@@ -20,6 +20,10 @@ Task("Create-WebSite")
         Name = "CakeDemo.Web",
         PhysicalDirectory = MakeAbsolute(Directory("../")),
 
+        Binding = IISBindings.Http
+            .SetIpAddress("*")
+            .SetPort(8080),
+
         ApplicationPool = new ApplicationPoolSettings()
         {
             Name = "CakeDemoPool"

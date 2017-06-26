@@ -197,18 +197,11 @@ Task("Install")
         Unzip(nupkg, $"{packagesPath}/{nupkg.GetFilenameWithoutExtension()}");
     }
 
-    var deployScripts = GetFiles($"{packagesPath}/**/scripts/deploy.ps1");
+    var deployScripts = GetFiles($"{packagesPath}/**/scripts/deploy.cake");
 
     foreach (var deployScript in deployScripts)
     {
-        StartPowershellFile(
-            deployScript,
-            new PowershellSettings()
-                .UseWorkingDirectory(deployScript.GetDirectory())
-                .WithArguments(args =>
-                {
-                    args.Append("SkipToolPackageRestore", string.Empty);
-                }));
+        CakeExecuteScript(deployScript);
     }
 });
 
