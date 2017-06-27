@@ -3,7 +3,7 @@ using System.Web.Http;
 
 namespace Web.Api
 {
-    [RoutePrefix("/api/values")]
+    [RoutePrefix("api/values")]
     public class ValuesController : ApiController
     {
         [HttpGet]
